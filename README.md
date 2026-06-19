@@ -30,7 +30,7 @@ Follow these steps to run the application locally on your machine.
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com.git
-cd your-repo-name
+cd <your-repo-name>
 ```
 
 ### 2. Configure Environment Variables
@@ -39,8 +39,8 @@ Create a `.env` file in your backend directory and populate the required credent
 PORT = your_backend_port
 MONGODB_URI = your_mongodb_connection_string
 JWT_SECRET = your_jwt_token_secret
-ADMIN_EMAIL = admin@resumeprep.com
-ADMIN_PASSWORD = your_secure_admin_password
+ADMIN_EMAIL = your_admin_email
+ADMIN_PASSWORD = your_admin_password
 CLOUDINARY_NAME = your_cloudinary_name
 CLOUDINARY_API_KEY = your_api_key
 CLOUDINARY_SECRET_KEY = your_secret_key
@@ -77,28 +77,28 @@ npm install
 npm run dev
 ```
 
----
+
 
 ## Modular Project Layout
 ```text
 ├── backend/
-    │   ├── config/          # MongoDB & Cloudinary setup
-    │   ├── controllers/     # Core admin, user, doctor controller logic
-    │   ├── middleware/      # Admin/User Authentication guards with multer
-    │   ├── models/          # Structured Mongoose schemas (User, Appointment, Doctor)
-    │   └── routes/          # Express route mappings
-└── frontend/
-    ├── src/
-    │   ├── assets/          # Assets files like images
-    │   ├── components/      # Reusable UI modules (Navbar, Footer, etc.)
-    │   ├── context/         # Global state providers (AppContext, AdminContext)
-    │   ├── pages/           # Portal layouts (Home, About, Login, etc.)
-    │   └── App.jsx         # Primary route configuration
+│   ├── config/             # MongoDB & Cloudinary setup
+│   ├── controllers/        # Core admin, user, doctor controller logic
+│   ├── middleware/         # Admin/User Authentication guards with multer
+│   ├── models/             # Structured Mongoose schemas (User, Appointment, Doctor)
+│   └── routes/             # Express route mappings
+├── frontend/
+│    └── src/
+│       ├── assets/          # Assets files like images
+│       ├── components/      # Reusable UI modules (Navbar, Footer, etc.)
+│       ├── context/         # Global state providers (AppContext, AdminContext)
+│       ├── pages/           # Portal layouts (Home, About, Login, etc.)
+│       └── App.jsx          # Primary route configuration
 └── admin/
-    ├── src/
-    │   ├── assets/          # Assets files like images
-    │   ├── components/      # Reusable UI modules (Navbar, Sidebar)
-    │   ├── context/         # Global state providers (AppContext, AdminContext)
-    │   ├── pages/           # Portal layouts (Dashboard, etc.)
-    │   └── App.jsx         # Primary route configuration
+    └── src/
+        ├── assets/          # Assets files like images
+        ├── components/      # Reusable UI modules (Navbar, Sidebar)
+        ├── context/         # Global state providers (AppContext, AdminContext)
+        ├── pages/           # Portal layouts (Dashboard, etc.)
+        └── App.jsx          # Primary route configuration
 ```
