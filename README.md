@@ -2,10 +2,10 @@
 A full-stack medical booking system featuring secure role-based access control, automated scheduling workflows, and a live administrative data dashboard.
 
 ## Table of Contents
-1. [Technology Stack & Utilities](#️-technology-stack-and-utilities)
-2. [Core Engineering Features](#-core-engineering-features)
-3. [Installation and Setup](#-installation-and-setup)
-4. [Modular Project Layout](#-modular-project-layout)
+1. [Technology Stack and Utilities](#technology-stack-and-utilities)
+2. [Core Engineering Features](#core-engineering-features)
+3. [Installation and Setup](#installation-and-setup)
+4. [Modular Project Layout](#modular-project-layout)
   
 ## Technology Stack and Utilities
 - MongoDB
@@ -24,7 +24,7 @@ A full-stack medical booking system featuring secure role-based access control, 
 - **Administrative Control Panel:** Master CRUD capabilities allowing admins to globally oversee doctor directories, monitor user profiles, and audit scheduling flows.
 - **Cloud Assets Management:** Integrated Cloudinary storage API for secure, optimized image processing and user avatar tracking.  
   
-## Installation & Setup
+## Installation and Setup
 Follow these steps to run the application locally on your machine.
 
 ### 1. Clone the Repository
