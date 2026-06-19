@@ -29,7 +29,7 @@ Follow these steps to run the application locally on your machine.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com.git
+git clone 
 cd <your-repo-name>
 ```
 
